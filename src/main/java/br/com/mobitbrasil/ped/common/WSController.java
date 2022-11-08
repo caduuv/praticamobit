@@ -22,8 +22,10 @@ import br.com.mobitbrasil.ped.validarTriangulo.entity.Triangulo;
 import br.com.mobitbrasil.ped.validarTriangulo.service.ITrianguloService;
 import br.com.mobitbrasil.ped.verificaAnagrama.IAnagramaService;
 import br.com.mobitbrasil.ped.verificarPrimeiroPrimo.INumeroPrimoService;
+import io.swagger.annotations.Api;
 
 @RestController
+@Api(tags= {"WebService Controller"} ) 
 @RequestMapping("/v1/pratica")
 public class WSController {
 	
