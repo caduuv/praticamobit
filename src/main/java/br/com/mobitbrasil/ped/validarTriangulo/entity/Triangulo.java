@@ -9,6 +9,13 @@ public class Triangulo {
 	private Integer b;
 	private Integer c;
 	
+	public Triangulo(Integer a, Integer b, Integer c) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
 	public Integer getA() {
 		return a;
 	}

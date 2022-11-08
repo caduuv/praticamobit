@@ -58,7 +58,7 @@ public class WSController {
 	@ApiOperation(value="Validar se o Triangulo é Válido", response = Boolean.class)
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Condição de Existência do Triangulo Devidamente Verificada"),
-			@ApiResponse(code = 400, message = "Um Lado do Triangulo não Foi Informado")
+			@ApiResponse(code = 400, message = "Um Lado do Triangulo Está Faltando")
 	})
 	public ResponseEntity<Boolean> validarFormaTriangulo(@RequestBody Triangulo triangulo){
 		

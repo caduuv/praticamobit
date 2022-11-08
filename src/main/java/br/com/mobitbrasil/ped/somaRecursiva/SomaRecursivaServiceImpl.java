@@ -15,7 +15,7 @@ public class SomaRecursivaServiceImpl implements ISomaRecursivaService {
 	 */
 	public long somar(int valor) {
 		
-		if(valor == 0) {
+		if(valor <= 0) {
 			return 0;
 		}
 		else {
