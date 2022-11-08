@@ -1,11 +1,18 @@
 package br.com.mobitbrasil.ped.ordenarIdade.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+@ApiModel(description = "Pessoa")
 public class Pessoa implements java.lang.Comparable<Pessoa>{
 
     private String nome;
+    
+    @ApiModelProperty(notes = "Campo utilizado para ordenar as instâncias de Pessoa")
     private Integer idade;
+    
     private String email;
+    
     private String telefone;
 
     public Integer getIdade() {

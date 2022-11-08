@@ -1,5 +1,8 @@
 package br.com.mobitbrasil.ped.common.to;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel(description = "Classe utilizada para receber duas string que serão comparadas")
 public class DoisTextosTO {
 	
 	private String texto1;

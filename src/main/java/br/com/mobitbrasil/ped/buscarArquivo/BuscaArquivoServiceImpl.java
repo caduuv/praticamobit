@@ -9,6 +9,8 @@ import java.nio.file.Paths;
 
 import org.springframework.stereotype.Service;
 
+import br.com.mobitbrasil.ped.buscarArquivo.exception.AbrirArquivoException;
+
 @Service
 public class BuscaArquivoServiceImpl implements IBuscaArquivoService {
 	
@@ -27,7 +29,7 @@ public class BuscaArquivoServiceImpl implements IBuscaArquivoService {
 		try {
 			return Files.lines(Paths.get("src/main/resources/palavras.txt")).filter(row -> row.toLowerCase().contains(palavra.toLowerCase())).count();
 		} catch (IOException e) {
-			throw new UnsupportedOperationException();
+			throw new AbrirArquivoException();
 		}
 		
 		

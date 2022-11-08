@@ -1,5 +1,8 @@
 package br.com.mobitbrasil.ped.validarTriangulo.entity;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel(description = "Triangulo")
 public class Triangulo {
 	
 	private Integer a;

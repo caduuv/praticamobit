@@ -13,12 +13,16 @@ public class AnagramaServiceImpl implements IAnagramaService{
      *
      * @param a - Primeiro texto
      * @param b - Segundo texto
+     * 
+     * Se forem anagramas, tem exatamente as mesmas letras e a mesma quantidade das mesmas
+     * logo, se ordenarmos ambas as strings, teremos o mesmo resultado final.
      *
      * @return
      */
 	@Override
     public boolean checarAnagramas(String a, String b){
 		
+		//RegEx para ignorar espaços em branco
         String stringOrdenadaA = ordernarCaracteresEmOrdemAlfabetica(a.replaceAll("\\s+", ""));
         String stringOrdenadaB = ordernarCaracteresEmOrdemAlfabetica(b.replaceAll("\\s+", ""));
         
