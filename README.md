@@ -8,6 +8,3 @@ Com exceção da questão 6 que é simplesmente uma construção de classes, tod
 
 A aplicação conta com Swagger para conferência dos recursos sem ter a necessidade de analisar o código fonte.
 
-Java 12;
-GIT como controle de versão;
-Maven como gerenciador de dependências;
