@@ -25,7 +25,7 @@ public class WSControllerAdvice {
 	
 	@ResponseBody
 	@ExceptionHandler(AbrirArquivoException.class)
-	public ResponseEntity<MessageExceptionHandler> campoTrianguloFaltante(AbrirArquivoException abrirArquivoException){
+	public ResponseEntity<MessageExceptionHandler> falhaAoAbrirArquivo(AbrirArquivoException abrirArquivoException){
 		MessageExceptionHandler error = new MessageExceptionHandler(
 				new Date(), HttpStatus.INTERNAL_SERVER_ERROR.value(), "Falha ao Abrir o Arquivo 'palavras.txt'");
 		return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);

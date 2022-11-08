@@ -7,22 +7,22 @@ public class NumeroPrimoServiceImpl implements INumeroPrimoService {
 
 	@Override
 	public long proximoPrimo(long num) {
-		
+
 		boolean primoFoiEncontrado = false;
 		num++;
-		
-		while(!primoFoiEncontrado) {
-			
-			if(isPrimo(num)) {
+
+		while (!primoFoiEncontrado) {
+
+			if (isPrimo(num)) {
 				primoFoiEncontrado = true;
 			} else {
 				num++;
 			}
-			
+
 		}
-		
+
 		return num;
-		
+
 	}
 
 	private boolean isPrimo(long num) {
