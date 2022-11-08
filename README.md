@@ -6,5 +6,6 @@ Arquitetura foi baseada na organização package by feature. Os pacotes foram cr
 
 Com exceção da questão 6 que é simplesmente uma construção de classes, todas as outras possuem recursos expostos na API para serem consultados e, consequentemente, verificar a validade da resposta. Pequenas alterações foram feitas no que tange a estrutura das classes inicialmente propostas no repositório.
 
-A aplicação conta com Swagger para conferência dos recursos sem ter a necessidade de analisar o código fonte.
+A aplicação conta com *Swagger* para conferência dos recursos sem ter a necessidade de analisar o código fonte.
+[https://api-mobit-desafio-tecnico.herokuapp.com/swagger-ui.html](https://api-mobit-desafio-tecnico.herokuapp.com/swagger-ui.html)
 
