@@ -28,7 +28,6 @@ public class Pessoa implements java.lang.Comparable<Pessoa>{
 		this.email = email;
 		this.telefone = telefone;
 	}
-    
 
 	public Integer getIdade() {
         return idade;
